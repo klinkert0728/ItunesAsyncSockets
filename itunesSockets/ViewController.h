@@ -8,12 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "GCDAsyncSocket.h"
+#import <FacebookSDK/FacebookSDK.h>
 
 @interface ViewController : UIViewController<UITextFieldDelegate,GCDAsyncSocketDelegate>{
     
     __weak IBOutlet UISlider *slider;
     __weak IBOutlet UISwitch *switchButton;
     GCDAsyncSocket *socket;
+    
 }
 @property (weak, nonatomic) IBOutlet UITextField *ipTextField;
 @property (weak, nonatomic) IBOutlet UITextField *trackTextField;

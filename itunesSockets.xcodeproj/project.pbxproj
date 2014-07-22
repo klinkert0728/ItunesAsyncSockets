@@ -27,6 +27,7 @@
 		6576E6B9196A52B600E2BA91 /* pause.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6576E6B8196A52B600E2BA91 /* pause.jpg */; };
 		6576E6BB196A53B200E2BA91 /* next.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6576E6BA196A53B200E2BA91 /* next.jpg */; };
 		6576E6BD196A548100E2BA91 /* back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6576E6BC196A548100E2BA91 /* back.jpg */; };
+		65E7D46A196F65BA006E361F /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E7D469196F65BA006E361F /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		6576E6B8196A52B600E2BA91 /* pause.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pause.jpg; sourceTree = "<group>"; };
 		6576E6BA196A53B200E2BA91 /* next.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = next.jpg; sourceTree = "<group>"; };
 		6576E6BC196A548100E2BA91 /* back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back.jpg; sourceTree = "<group>"; };
+		65E7D469196F65BA006E361F /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65E7D46A196F65BA006E361F /* FacebookSDK.framework in Frameworks */,
 				6576E67E196A408A00E2BA91 /* CoreGraphics.framework in Frameworks */,
 				6576E680196A408A00E2BA91 /* UIKit.framework in Frameworks */,
 				6576E67C196A408A00E2BA91 /* Foundation.framework in Frameworks */,
@@ -123,6 +126,7 @@
 		6576E67A196A408A00E2BA91 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				65E7D469196F65BA006E361F /* FacebookSDK.framework */,
 				6576E67B196A408A00E2BA91 /* Foundation.framework */,
 				6576E67D196A408A00E2BA91 /* CoreGraphics.framework */,
 				6576E67F196A408A00E2BA91 /* UIKit.framework */,
@@ -345,6 +349,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone FakeSing";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -361,7 +366,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -383,6 +388,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone FakeSing";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -393,7 +399,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -405,6 +411,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone FakeSing";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Daniel/Documents/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "itunesSockets/itunesSockets-Prefix.pch";
 				INFOPLIST_FILE = "itunesSockets/itunesSockets-Info.plist";
@@ -420,6 +430,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone FakeSing";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Daniel/Documents/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "itunesSockets/itunesSockets-Prefix.pch";
 				INFOPLIST_FILE = "itunesSockets/itunesSockets-Info.plist";
@@ -488,6 +502,7 @@
 				6576E6AC196A408A00E2BA91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6576E6AD196A408A00E2BA91 /* Build configuration list for PBXNativeTarget "itunesSocketsTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +511,7 @@
 				6576E6AF196A408A00E2BA91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
